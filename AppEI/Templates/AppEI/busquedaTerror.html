@@ -1,0 +1,27 @@
+{% extends "AppEI/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">FORMULARIO DE PELICULAS DE TERROR</h1>
+{% endblock %}
+
+
+{% block contenido_que_cambia %}
+
+<h3>{{ mensaje }}</h3>
+
+<form action="{% url 'buscar' %}" method="GET">
+    
+    <input type="text" name="titulo" id="titulo" placeholder="INSERTE TITULO">
+    <input type="submit" value="Buscar Pelicula">
+
+
+
+</form>
+
+
+
+
+
+{% endblock %}
